@@ -4,14 +4,14 @@ Sample project based off of a real problem somewhere real
 ### Example
 
 ##### example.csv
-```csv
+```csv INJECT_CODE(examples/example.csv)
 foo,bar,baz
 1,2,3
 4,5,6
 7,8,9
 ```
 
-```python
+```python INJECT_CODE(examples/example.py)
 from generate import inf_csv
 
 with open("example.csv", "r") as c:
@@ -19,10 +19,10 @@ with open("example.csv", "r") as c:
     for _ in range(4):
         print(next(data))
 
-['1', '2', '3']
-['4', '5', '6']
-['7', '8', '9']
-['1', '2', '3']
+# ['1', '2', '3']
+# ['4', '5', '6']
+# ['7', '8', '9']
+# ['1', '2', '3']
 ```
 
 ### Design choices
