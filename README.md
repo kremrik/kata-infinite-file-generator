@@ -26,6 +26,7 @@ with open("example.csv", "r") as c:
 ```
 
 ### Design choices
+(refer to [generate.py](./generate.py))
 
 ##### Use of `__all__`
 Since there is really no built-in notion of "private" in Python, people are familiar with the convention of prefacing pseudo-private (ie, "please don't touch my stuff") functions/methods with one or two underscores.
