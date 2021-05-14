@@ -31,7 +31,7 @@ with open("example.csv", "r") as c:
 ##### Use of `__all__`
 Since there is really no built-in notion of "private" in Python, people are familiar with the convention of prefacing pseudo-private (ie, "please don't touch my stuff") functions/methods with one or two underscores.
 
-I find that the cue of including the user-facting functions in `__all__` serves as a cue in the other direction: these are the functions you may touch.
+I find that the cue of including the user-facting functions in `__all__` serves as a visual aid in the other direction: these are the functions you may touch.
 
 ##### Use of generators
 Generators are lazy collections/sequences which can be used to create inexhaustible "streams" of data. For the use case of creating an unlimited stream of data, they make the most sense.
